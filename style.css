@@ -1,0 +1,29 @@
+
+:root{--bg:#faf7f2;--card:#fff;--ink:#2b2520;--sub:#7a6e64;--line:#ece4da;--accent:#b5683d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.wrap{max-width:680px;margin:0 auto;padding:24px 16px 56px}
+header.top{text-align:center;padding:12px 0 20px}
+header.top h1{font-size:22px;margin:0 0 4px;letter-spacing:-.3px}
+header.top p{margin:0;color:var(--sub);font-size:14px}
+.filters{display:flex;gap:8px;justify-content:center;margin:0 0 18px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;color:var(--ink);cursor:pointer}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;border:1px solid var(--line)}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#ddd}
+.card .t{padding:10px 12px 12px}.card .no{font-size:12px;color:var(--accent);font-weight:600}
+.card .nm{font-size:15px;font-weight:600;margin-top:2px;line-height:1.4}
+.card .pr{font-size:13px;color:var(--sub);margin-top:4px}
+.back{display:inline-block;margin-bottom:14px;color:var(--sub);text-decoration:none;font-size:14px}
+.hero{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block}
+.detail h1{font-size:21px;line-height:1.45;margin:18px 0 8px;letter-spacing:-.3px}
+.detail .tag{display:inline-block;font-size:12px;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:1px 9px;margin-bottom:6px}
+.sec{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:12px}
+.sec h2{font-size:16px;margin:0 0 6px}.sec ul{margin:0;padding-left:18px}.sec li{margin:3px 0}
+.lead p{margin:6px 0}.close{margin-top:16px;font-weight:600}
+.btns{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.btns a,.btns button{flex:1;min-width:140px;text-align:center;padding:11px 12px;border-radius:12px;text-decoration:none;font:inherit;font-size:15px;border:1px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.btns a.main{background:var(--ink);color:#fff}
+.note{font-size:13px;color:var(--sub);margin-top:22px;line-height:1.6}
+footer{text-align:center;color:var(--sub);font-size:12px;margin-top:36px}
+@media (max-width:380px){.grid{grid-template-columns:1fr}}
